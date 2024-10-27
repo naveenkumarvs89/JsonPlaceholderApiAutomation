@@ -1,0 +1,52 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // RestAssured for API testing
+    implementation 'io.rest-assured:rest-assured:4.5.1'
+    // Jackson dependency
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    // Log4j for logging
+    implementation 'org.apache.logging.log4j:log4j-api:2.20.0'
+    implementation 'org.apache.logging.log4j:log4j-core:2.20.0'
+    // TestNG for testing framework
+    implementation 'org.testng:testng:7.7.0'
+    // Allure for reporting
+//    implementation 'io.qameta.allure:allure-java-commons:2.17.3'
+//    implementation 'io.qameta.allure:allure-testng:2.17.3'
+    // https://mvnrepository.com/artifact/io.rest-assured/json-schema-validator
+    implementation 'io.rest-assured:json-schema-validator:4.5.1'
+    implementation 'org.slf4j:slf4j-api:1.7.32' // SLF4J API
+    implementation 'ch.qos.logback:logback-classic:1.2.3' // Logback implementation
+    implementation 'com.aventstack:extentreports:5.0.9'
+
+}
+
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/java']
+    }
+    test {
+        java.srcDirs = ['src/test/java']
+        resources.srcDirs = ['src/test/resources']  // Ensures testng.xml and other resources are recognized
+    }
+}
+
+task testng(type: Test) {
+    useTestNG() {
+        suites 'src/test/resources/testng.xml'
+    }
+}
+
+test {
+    useTestNG() // This line tells Gradle to use TestNG for tests
+    testLogging {
+        events "passed", "skipped", "failed" // Optional: For detailed logging
+    }
+}
+

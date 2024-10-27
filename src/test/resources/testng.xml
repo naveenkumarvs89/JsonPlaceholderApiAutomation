@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="API Automation Suite" parallel="classes" thread-count="4">
+    <listeners>
+        <!-- Allure listener for reporting -->
+        <listener class-name="listeners.CustomTestListener"/>
+        <listener class-name="listeners.CustomReporter"/>
+    </listeners>
+
+    <test name="API Tests">
+        <classes>
+            <!-- Test classes for different endpoints -->
+            <class name="tests.PostsTest"/>
+            <!--<class name="tests.CommentsTest"/>-->
+            <!-- Add other test classes as needed -->
+        </classes>
+    </test>
+</suite>
