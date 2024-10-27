@@ -10,5 +10,14 @@
   },
   {
     "postId": 4
+  },
+  {
+    "putId": 1
+  },
+  {
+    "patchId": 1
+  },
+  {
+    "deleteId": 1
   }
 ]
