@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ebdaf30b-8b93-42f5-8a0c-8f89189f43a9" name="Changes" comment="" />
+    <list default="true" id="ebdaf30b-8b93-42f5-8a0c-8f89189f43a9" name="Changes" comment="Second commit with all files">
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/JsonDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/schemas/post-by-id-schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/postData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/SchemaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/SchemaValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CommentsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostsCommentsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/PostsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/PostsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/schemas/comment-schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/schemas/comment-schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/schemas/post-schema.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/schemas/post-schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +98,23 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "naveenkumarvs89"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/naveenkumarvs89/JsonPlaceholderApiAutomation.git",
+    "accountId": "2a83b947-d09f-456c-9c56-ce8d53ff51ec"
+  }
+}]]></component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="PostsTest.getAllPostsTest" />
+    </enabled-run-configurations>
+  </component>
   <component name="KotlinCodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
@@ -106,6 +134,9 @@
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2nyysHDaMlIiry077VIJncgXtRe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -115,11 +146,13 @@
     "Gradle.Build JsonPlaceholderApiAutomation.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.C:/Users/Naveen Kumar/IdeaProjects/JsonPlaceholderApiAutomation/src/test/java/resources/testng.xml.executor": "Run",
+    "TestNG.PostsCommentsTest.executor": "Run",
     "TestNG.PostsTest.executor": "Run",
+    "TestNG.PostsTest.getAllPostsTest.executor": "Debug",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/gradle/rest-assured-4.5.1.jar",
+    "last_opened_file_path": "C:/Users/Naveen Kumar/IdeaProjects/JsonPlaceholderApiAutomation/src/test/resources/schemas",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -127,6 +160,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Naveen Kumar\IdeaProjects\JsonPlaceholderApiAutomation\src\test\resources\schemas" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Naveen Kumar\IdeaProjects\JsonPlaceholderApiAutomation\src\test" />
       <recent name="C:\Users\Naveen Kumar\IdeaProjects\JsonPlaceholderApiAutomation\src\main\java\utils" />
@@ -137,7 +173,7 @@
       <recent name="domain.models" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.PostsTest">
+  <component name="RunManager" selected="TestNG.PostsCommentsTest">
     <configuration name="C:/Users/Naveen Kumar/IdeaProjects/JsonPlaceholderApiAutomation/src/test/java/resources/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JsonPlaceholderApiAutomation.test" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/resources/testng.xml" />
@@ -148,26 +184,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PostsTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="PostsCommentsTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="JsonPlaceholderApiAutomation.test" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.PostsTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.PostsCommentsTest" />
+      <option name="GROUP_NAME" value="" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.C:/Users/Naveen Kumar/IdeaProjects/JsonPlaceholderApiAutomation/src/test/java/resources/testng.xml" />
+      <item itemvalue="TestNG.PostsCommentsTest" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.PostsTest" />
+        <item itemvalue="TestNG.PostsCommentsTest" />
         <item itemvalue="TestNG.C:/Users/Naveen Kumar/IdeaProjects/JsonPlaceholderApiAutomation/src/test/java/resources/testng.xml" />
       </list>
     </recent_temporary>
@@ -181,10 +231,23 @@
       <option name="presentableId" value="Default" />
       <updated>1729959823399</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second commit with all files">
+      <option name="closed" value="true" />
+      <created>1730012212951</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730012212951</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="dependencySupport" implementationName="java:io.reactivex.rxjava3:rxjava" />
     <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second commit with all files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second commit with all files" />
   </component>
 </project>

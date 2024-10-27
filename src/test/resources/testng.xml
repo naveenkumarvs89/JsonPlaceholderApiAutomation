@@ -10,7 +10,7 @@
         <classes>
             <!-- Test classes for different endpoints -->
             <class name="tests.PostsTest"/>
-            <!--<class name="tests.CommentsTest"/>-->
+            <class name="tests.PostsCommentsTest"/>
             <!-- Add other test classes as needed -->
         </classes>
     </test>
