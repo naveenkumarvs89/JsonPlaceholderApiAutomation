@@ -21,6 +21,8 @@ The framework also utilizes other design patterns and principles, such as:
 
 Overall, this framework demonstrates a solid understanding of the SOLID principles and other design patterns and principles, making it maintainable, scalable, and easy to understand.
 
+### Extent Report
+![image](https://github.com/user-attachments/assets/0bb18d7e-a41e-4a3b-9b23-0d44fb2c934c)
 
 
 
