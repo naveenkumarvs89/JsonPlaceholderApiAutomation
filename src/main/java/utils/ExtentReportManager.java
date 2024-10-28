@@ -5,6 +5,9 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.testng.ITestResult;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class ExtentReportManager {
     private static ExtentReports extent;
     private static ExtentTest test;
@@ -18,13 +21,21 @@ public class ExtentReportManager {
         }
     }
 
+    private static final Map<String, ExtentTest> createdTests = new HashMap<>();
+
     public static ExtentTest createTest(String testName) {
-        test = extent.createTest(testName);
-        return test;
+        if (createdTests.containsKey(testName)) {
+            return createdTests.get(testName);
+        } else {
+            ExtentTest test = extent.createTest(testName);
+            createdTests.put(testName, test);
+            return test;
+        }
     }
 
     public static ExtentTest getTest(ITestResult result) {
-        return test;
+        String testName = result.getMethod().getMethodName();
+        return createdTests.get(testName);
     }
 
     public static ExtentReports getExtentReports() {

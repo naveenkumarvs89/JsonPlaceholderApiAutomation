@@ -1,20 +1,25 @@
 package domain.models;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class Post {
     private int id;
     private String title;
     private String body;
-    @JsonProperty("userId")
     private int userId;
 
-    public void setTitle(String title) {
-        this.title = title;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getBody() {
@@ -33,11 +38,15 @@ public class Post {
         this.userId = userId;
     }
 
-    public int getId() {
-        return id;
+    @Override
+    public String toString() {
+        String idStr = id == 0 ? "" : "id=" + id + ", ";
+        return "Post{" +
+                idStr +
+                "title='" + title + '\'' +
+                ", body='" + body + '\'' +
+                ", userId=" + userId +
+                '}';
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 }

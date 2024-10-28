@@ -9,8 +9,7 @@
     <test name="API Tests">
         <classes>
             <!-- Test classes for different endpoints -->
-            <class name="tests.PostsTest"/>
-            <class name="tests.PostsCommentsTest"/>
+            <class name="tests.ApiTest"/>
             <!-- Add other test classes as needed -->
         </classes>
     </test>

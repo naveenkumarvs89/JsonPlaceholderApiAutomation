@@ -8,8 +8,6 @@ import utils.ConfigManager;
 
 public class ApiClient {
     private static final Logger logger = LogManager.getLogger(ApiClient.class);
-
-//    String apiUrl = ConfigManager.getProperty("baseUrl") + "/posts";
     static String baseUrl = ConfigManager.getProperty("baseUrl");
 
     public static RequestSpecification getRequestSpecification() {
@@ -17,6 +15,7 @@ public class ApiClient {
         return RestAssured
                 .given()
                 .baseUri(baseUrl)
-                .contentType("application/json");
+                .header("Content-Type", "application/json")
+                .header("accept", "application/json");
     }
 }

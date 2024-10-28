@@ -5,6 +5,7 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import utils.ExtentReportManager;
+import com.aventstack.extentreports.ExtentTest;
 
 public class CustomTestListener implements ITestListener {
 
@@ -23,8 +24,8 @@ public class CustomTestListener implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        // Log the success in the report
-        ExtentReportManager.getTest(result).log(Status.PASS, "Test Passed");
+        ExtentTest test = ExtentReportManager.getTest(result);
+        test.pass("Test Passed");
     }
 
     @Override

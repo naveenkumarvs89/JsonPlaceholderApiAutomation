@@ -18,7 +18,6 @@ public class SchemaValidator {
             logger.error("Schema file not found: " + schemaPath);
             throw new IllegalArgumentException("Schema file not found: " + schemaPath);
         }
-        // ...
     }
 
 }

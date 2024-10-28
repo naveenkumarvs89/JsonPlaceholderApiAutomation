@@ -26,14 +26,38 @@ public class JsonDataProvider {
                 testData.add(new Object[]{node});
             }
         } catch (IOException e) {
-                logger.error("Error reading JSON file", e);
+            logger.error("Error reading JSON file", e);
         }
         return testData.toArray(new Object[0][]);
     }
 
-    @DataProvider(name = "dynamicDataProvider")
-    public static Object[][] dynamicDataProvider() {
+    @DataProvider(name = "dynamicPostDataProvider")
+    public static Object[][] dynamicPostDataProvider() {
         String filePath = "src/test/resources/testdata/postData.json"; // Path to JSON file
+        return getTestData(filePath);
+    }
+
+    @DataProvider(name = "dynamicPutDataProvider")
+    public static Object[][] dynamicPutDataProvider() {
+        String filePath = "src/test/resources/testdata/putData.json"; // Path to JSON file
+        return getTestData(filePath);
+    }
+
+    @DataProvider(name = "dynamicPatchDataProvider")
+    public static Object[][] dynamicPatchDataProvider() {
+        String filePath = "src/test/resources/testdata/patchData.json"; // Path to JSON file
+        return getTestData(filePath);
+    }
+
+    @DataProvider(name = "dynamicDeleteDataProvider")
+    public static Object[][] dynamicDeleteDataProvider() {
+        String filePath = "src/test/resources/testdata/deleteData.json"; // Path to JSON file
+        return getTestData(filePath);
+    }
+
+    @DataProvider(name = "dynamicCommentDataProvider")
+    public static Object[][] dynamicCommentDataProvider() {
+        String filePath = "src/test/resources/testdata/commentData.json"; // Path to JSON file
         return getTestData(filePath);
     }
 }
